@@ -1,0 +1,30 @@
+
+
+.detail-item {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.detail-title {
+  margin: 0 0 8px 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6c757d;
+}
+
+.detail-box {
+  background-color: #f6f7f9;
+  padding: 15px 25px;
+  border-radius: 10px;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.detail-value {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e2a3d;
+  font-family: "Nunito Sans", sans-serif;
+}

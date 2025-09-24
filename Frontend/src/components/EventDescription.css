@@ -1,0 +1,35 @@
+
+
+.description-container {
+    width: 100%;
+    max-width: 1100px; 
+    background-color: #f6f7f9; 
+    padding: 30px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-bottom: 40px; 
+}
+
+.description-container p {
+    font-family: "Nunito Sans", sans-serif;
+    color: #343a40; 
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.description-container p:last-child {
+    margin-bottom: 0; 
+}
+
+.highlight-text {
+    color: #1e2a3d;
+    font-weight: 600;
+}
+
+.plus-icon {
+    color: #e6a800; 
+    font-weight: 900;
+    margin-right: 8px;
+}
