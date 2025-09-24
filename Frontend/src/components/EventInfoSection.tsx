@@ -1,21 +1,26 @@
 import React from 'react';
 import './EventInfoSection.css';
-import eventPoster from '../assets/poster.png'; // 
 import DetailsCard from './DetailsCard';
+type EventInfoSectionProps = {
+  date: string;
+  venue: string;
+  organizer: string;
+  posterUrl: string;
+};
 
 
-const EventInfoSection: React.FC = () => {
+const EventInfoSection: React.FC<EventInfoSectionProps> = ({ date, venue, organizer, posterUrl }) => {
     return (
         <div className='info-section'>
     
             <div className='poster-container'>
-                <img src={eventPoster} alt="Event Poster" className='event-poster' />
+                <img src={posterUrl} alt="Event Poster" className='event-poster' />
             </div>
           
             <div className='details-container'>
-                <DetailsCard title="Event Name" value="EMPNEO 9.0" />
-                <DetailsCard title="Date" value="March 15, 2023" />
-                <DetailsCard title="Location" value="New York, NY" />
+                <DetailsCard title="Date" value={date} />
+                <DetailsCard title="Venue" value={venue} />
+                <DetailsCard title="Organizer" value={organizer} />
             </div>
         </div>
     );

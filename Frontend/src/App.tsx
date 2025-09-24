@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Eventpage from "./pages/Eventpage";
@@ -10,17 +10,17 @@ const App: React.FC = () => {
     <>
       <BrowserRouter>
         <Navbar />
-
         <div style={{ paddingTop: "70px" }}>
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/events" element={<Eventpage />} />
-            <Route path="/events/details" element={<EventDetailsPage />} />
+            <Route path="/events/:id" element={<EventDetailsPage />} />
+
           </Routes>
         </div>
       </BrowserRouter>
     </>
   );
-};
+}
 
 export default App;
