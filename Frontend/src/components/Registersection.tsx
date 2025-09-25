@@ -1,6 +1,11 @@
 import React from "react";
 import "./Registersection.css";
 
+interface RegisterSectionProps {
+  fee: string;
+  link: string;
+}
+
 const RegisterSection: React.FC<RegisterSectionProps> = ({ fee, link }) => {
   return (
     <div className="reg-section">
