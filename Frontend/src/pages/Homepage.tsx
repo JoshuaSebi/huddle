@@ -43,7 +43,7 @@ const Homepage = () => {
   const [events, setEvents] = useState<Event[]>(sampleEvents);
 
   return (
-    <div>
+    <div className="homepage-container">
       <div style={{ paddingTop: "10px" }} className="container my-1">
         <div className="d-flex justify-content-center mb-4">
           <form className="mb-4" role="searchbox">
