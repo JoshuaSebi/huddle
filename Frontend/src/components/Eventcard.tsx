@@ -40,14 +40,22 @@ const Eventcard: React.FC<EventcardProps> = ({
   };
 
   return (
-    <div className="card shadow-sm p-3 mb-4">
+    <div className="card p-3 mb-4 shadow">
       <div className="card-body">
-        <h5 className="card-title text-primary">{title}</h5>
+        <div className="d-flex justify-content-between align-items-start mb-2">
+          <h5
+            className="card-title text-primary fw-bold"
+            style={{ textTransform: "uppercase" }}
+          >
+            {title}
+          </h5>
+          <small className="text-muted">Conducted by: {club}</small>
+        </div>
+
         <h6 className="card-subtitle mb-2 text-muted">{type}</h6>
         <p className="card-text">{description}</p>
-        <small className="text-muted float-end">Conducted by: {club}</small>
 
-        <div className="d-flex flex-wrap gap-2 my-3">
+        <div className="d-flex gap-3 mb-3">
           <span className="badge bg-light text-dark">{date}</span>
           <span className="badge bg-light text-dark">{venue}</span>
           <span className="badge bg-light text-dark">{fee}</span>
