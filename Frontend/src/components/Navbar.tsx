@@ -44,8 +44,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
-        <div className="container-fluid">
-          {/* Left Section */}
+        <div className="container-fluid d-flex justify-content-between align-items-center">
           <div className="d-flex align-items-center">
             <button
               className="btn btn-outline-secondary me-3 border-0"
@@ -59,8 +58,7 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
 
-          {/* Center Section */}
-          <ul className="navbar-nav mx-auto d-flex flex-row gap-4">
+          <ul className="navbar-nav d-flex flex-row gap-4">
             <li className="nav-item">
               <NavLink to="/" className="nav-link" end>
                 Home
@@ -73,7 +71,6 @@ const Navbar: React.FC = () => {
             </li>
           </ul>
 
-          {/* Right Section*/}
           <div className="position-relative" ref={menuRef}>
             <img
               src="https://via.placeholder.com/40"
@@ -108,7 +105,6 @@ const Navbar: React.FC = () => {
         </div>
       </nav>
 
-      {/* Sidebar and Overlay */}
       <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && (
         <div className="sidebar-overlay" onClick={toggleSidebar}></div>
@@ -118,3 +114,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
